@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Petstore.api.automation.PetstoreDataCreationTest]" verbose="0">
+  <test thread-count="5" name="Command line test(failed)" verbose="0">
+    <classes>
+      <class name="Petstore.api.automation.PetstoreDataCreationTest">
+        <methods>
+          <include name="i_add_a_new_pet_with_the_provided_dataTest"/>
+          <include name="i_have_pet_data_in_the_following_JSON_fileTest"/>
+          <include name="the_response_status_code_should_beTest"/>
+        </methods>
+      </class> <!-- Petstore.api.automation.PetstoreDataCreationTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [Petstore.api.automation.PetstoreDataCreationTest] -->

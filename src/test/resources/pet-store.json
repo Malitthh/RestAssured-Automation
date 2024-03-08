@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "category": {
+            "id": 1,
+            "name": "rex"
+        },
+        "name": "rex",
+        "photoUrls": [
+            "abc.lk"
+        ],
+        "tags": [
+            {
+                "id": 1,
+                "name": "rex"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 2,
+        "category": {
+            "id": 2,
+            "name": "tom"
+        },
+        "name": "tom",
+        "photoUrls": [
+            "abcd.lk"
+        ],
+        "tags": [
+            {
+                "id": 2,
+                "name": "tom"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 3,
+        "category": {
+            "id": 3,
+            "name": "fed"
+        },
+        "name": "fed",
+        "photoUrls": [
+            "abcde.lk"
+        ],
+        "tags": [
+            {
+                "id": 3,
+                "name": "fed"
+            }
+        ],
+        "status": "available"
+    },
+    {
+        "id": 4,
+        "category": {
+            "id": 4,
+            "name": "bob"
+        },
+        "name": "doggie",
+        "photoUrls": [
+            "abcdef.lk"
+        ],
+        "tags": [
+            {
+                "id": 4,
+                "name": "bob"
+            }
+        ],
+        "status": "available"
+    }
+]
