@@ -23,7 +23,7 @@ This Project contains the API Automation Testing for Petstore API Service
 for this project,
 
 1. Unzip the folder.
-2. Make sure to fulfil the Pre-req
+2. Make sure to fulfill the Pre-req
 
 ### Running the Tests
 
