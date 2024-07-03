@@ -3,12 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Petstore.api.automation.test">
+      <class name="Petstore.api.automation.PetstoreRequests">
         <methods>
           <include name="findPetsByTags"/>
-          <include name="findPetsByStatus"/>
         </methods>
-      </class> <!-- Petstore.api.automation.test -->
+      </class> <!-- Petstore.api.automation.PetstoreRequests -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

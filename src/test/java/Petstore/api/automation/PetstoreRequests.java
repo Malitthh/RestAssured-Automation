@@ -1,7 +1,12 @@
 package Petstore.api.automation;
 
+import org.testng.Assert;
 import org.testng.annotations.Test;
+
+import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import io.restassured.specification.RequestSpecification;
+
 import static io.restassured.RestAssured.*;
 import java.io.FileReader;
 import java.io.FileWriter; // Import FileWriter
@@ -13,16 +18,27 @@ import org.json.simple.parser.JSONParser;
 
 public class PetstoreRequests {
 	
+//	@Test(priority=1)
+//	void addaNewPet() {
+//	    given()
+//	        .contentType("application/json")
+//	        .body("{ \"id\": 2, \"category\": { \"id\": 5, \"name\": \"Ghost\" }, \"name\": \"Ghost\", \"photoUrls\": [ \"abcdefg.lk\" ], \"tags\": [ { \"id\": 2, \"name\": \"Ghost\" } ], \"status\": \"pending\" }")
+//	    .when()
+//	        .post("https://petstore.swagger.io/v2/pet")
+//	    .then()
+//	        .statusCode(200);
+//	}
+	
 	@Test(priority=1)
-	void addaNewPet() {
-	    given()
-	        .contentType("application/json")
-	        .body("{ \"id\": 2, \"category\": { \"id\": 5, \"name\": \"Ghost\" }, \"name\": \"Ghost\", \"photoUrls\": [ \"abcdefg.lk\" ], \"tags\": [ { \"id\": 2, \"name\": \"Ghost\" } ], \"status\": \"pending\" }")
-	    .when()
-	        .post("https://petstore.swagger.io/v2/pet")
-	    .then()
-	        .statusCode(200);
+	void addANewPet() {
+	    RequestSpecification request = RestAssured.given();
+	    request.contentType("application/json");
+	    request.body("{ \"id\": 7, \"category\": { \"id\": 5, \"name\": \"Bravo\" }, \"name\": \"Bravo\", \"photoUrls\": [ \"abcdefg.lk\" ], \"tags\": [ { \"id\": 7, \"name\": \"Bravo\" } ], \"status\": \"pending\" }");
+
+	    Response response = request.post("https://petstore.swagger.io/v2/pet");
+	    Assert.assertEquals(response.getStatusCode(), 200);
 	}
+
 
     @Test(priority=2)
     void createPetsAndStoreIDs() {
@@ -68,8 +84,8 @@ public class PetstoreRequests {
         try {
             // Update the pet with new data
             JSONObject updatedPetData = new JSONObject();
-            updatedPetData.put("id", 1); // Update pet with ID number 1
-            updatedPetData.put("name", "Sherry"); // Change to the new name as needed
+            updatedPetData.put("id", 5); // Update pet with ID number 1
+            updatedPetData.put("name", "BravoSherry"); // Change to the new name as needed
             updatedPetData.put("status", "sold"); // Change to the new status as needed
 
             given()
