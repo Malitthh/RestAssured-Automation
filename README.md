@@ -5,6 +5,10 @@
 This Project contains the API Automation Testing for Petstore API Service
 https://petstore.swagger.io/#/pet/findPetsByStatus
 
+### HTTP Codes
+
+1. https://status.js.org/
+
 ### Table of Contents
 
 1. Prerequisites
